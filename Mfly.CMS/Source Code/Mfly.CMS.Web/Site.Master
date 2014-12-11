@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>泰安美术馆</title>
+    <link type="text/css" rel="stylesheet" href="/style/reset.css" />
+    <link type="text/css" rel="stylesheet" href="/style/style.css" />
+    <link type="text/css" rel="stylesheet" href="/style/datetime.css" />
+    <link type="text/css" rel="stylesheet" href="/style/two.css" />
+    <link type="text/css" rel="stylesheet" href="/js/fangdajing/subpage.style.css" />
+    <link type="text/css" rel="stylesheet" href="/js/fangdajing/auction.style.css" />
+    <link type="text/css" rel="stylesheet" href="/js/fangdajing/mglass.css" />
+    <script type="text/javascript" src="/js/jquery1.7.2.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.select.js"></script>
+    <script type="text/javascript" src="/js/tab.js"></script>
+    <script type="text/javascript" src="/js/swfobject.js"></script>
+    <script type="text/javascript" src="/js/hotpic.js"></script>
+    <script type="text/javascript" src="/js/jquery.truncatable.js"></script>
+    <script type="text/javascript" src="/js/cal/WdatePicker.js"></script>
+    <script type="text/javascript" src="/js/fangdajing/InzoneNavi.js"></script>
+    <script type="text/javascript" src="/js/fangdajing/mglass.js"></script>
+    <script type="text/javascript" src="/js/Images.js"></script>
+    <script type="text/javascript" src="/js/bigpicroll.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="bigbg" style="position: relative; display: block;">
+            <div class="mw1000 header">
+                <a href="Default.aspx" class="logo" title="泰安市美术馆"></a>
+                <div class="banner banner_news"></div>
+                <div class="nav">
+                    <ul>
+                        <li class=" wu"><a href="Default.aspx">首页</a></li>
+                        <asp:Repeater ID="rptMenu" runat="server" OnItemDataBound="rptMenu_ItemDataBound">
+                            <ItemTemplate>
+                                <li class="current">
+                                    <asp:HyperLink ID="hlMenu" runat="server" />
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                </div>
+            </div>
+            <div class="mw1000 main">
+                <asp:ContentPlaceHolder ID="cpDefaultContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="mw1000 main">
+
+                <!--左侧导航-->
+                <div class="sidebar">
+                    <ul>
+                        <asp:Repeater ID="rptSecondMenu" runat="server" OnItemDataBound="rptSecondMenu_ItemDataBound">
+                            <ItemTemplate>
+                                <li class="current">
+                                    <asp:HyperLink ID="hlMenu" runat="server" /></li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                </div>
+                <!--右侧内容-->
+                <div class="rightcontent">
+                    <div class="address">
+                        <a href="/">首页</a>
+                        <asp:Literal Text="" ID="ltlSiteMap" runat="server" />
+                    </div>
+                    <asp:ContentPlaceHolder ID="cpRightContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--友情连接-->
+            <div class="mw1000 link">
+                <%--<ul>
+                    <li class="wu"><a href="/chiefly.html?hcs=11" target="_blank">泰安市美术馆美术馆</a></li>
+                    <li><a href="/chiefly.html?hcs=125" target="_blank">齐白石艺术国际研究中心</a></li>
+                    <li><a href="/chiefly.html?hcs=73" target="_blank">传统中国绘画研究中心</a></li>
+                    <li><a href="/chiefly.html?hcs=136" target="_blank">齐白石旧居纪念馆</a></li>
+                </ul>--%>
+            </div>
+            <!--线-->
+            <div class="line"></div>
+            <!--底部-->
+            <div class="mw1000 footer">
+                <%--<div class="share">
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style_24x24">
+                        <a class="jiathis_button_tsina"></a>
+                        <a class="jiathis_button_weixin"></a>
+                        <a class="jiathis_button_cqq"></a>
+                        <a class="jiathis_button_tqq"></a>
+                    </div>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                    <div><a style="opacity: 1; filter: alpha(opacity=1); margin: 5px 0px 0px 40px;" href="/block.html?hcs=1&clg=206" target="_blank">友情链接</a></div>
+                </div>--%>
+                版权所有 XXXXXXX 鲁ICP备XXXXX<br />
+                技术支持由XXXXXX提供
+            </div>
+        </div>
+    </form>
+</body>
+</html>

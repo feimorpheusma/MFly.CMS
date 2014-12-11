@@ -1,0 +1,81 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+/*焦点图*/
+.hotpic{ float:left;width:460px;height:330px; position:relative;}
+#slides .slides_container{width:460px;height:330px;display:none;}
+#slides .slides_container div{width:460px;height:330px;display:block;}
+.caption p {z-index:500;position:absolute;left:0;height:32px;bottom:0px;padding:0px 20px 0 20px;background:#000;background:rgba(0,0,0,.5);width:460px;font-size:14px;line-height:32px;	color:#fff;border-top:1px solid #000;text-shadow:none;}
+#slides .prev,#slides .next{ display:none;}
+#slides .pagination{ position:absolute;bottom:10px;right:10px; z-index:10;}
+#slides .pagination li{width:12px;height:12px; float:left;padding-left:4px;}
+#slides .pagination li a{ display:block; text-align:center; line-height:12px; background:#666; color:#fff;}
+#slides .pagination li.current a{ background:#000;}
+
+/*最新新闻*/
+.news{height:330px; background:#e0e1d8; float:left;margin-left:6px; display:inline;width:500px;padding:0 12px;}
+.news h2{ color:#51514e; line-height:36px;padding:5px 0 0; font-size:14px; font-weight:normal;}
+.news h3{ font-size:20px; font-weight:normal;}
+.news h3 a{ color:#000;}
+.news p{ line-height:18px;height:85px;overflow:hidden;padding:12px 0;}
+.news .news_list li{ background:url(../images/common/dian.gif) no-repeat left center;}
+
+/*展厅*/
+.showroom{ position:relative;height:330px; float:right;width:242px;margin:0 0 25px;}
+.showroom .act{ position:absolute;bottom:0;left:0;width:242px; background:#8b8b8b;height:58px; line-height:58px; text-align:center; color:#e0e2d7; font-size:14px;}
+
+/*展览讯息*/
+.exhibition{ float:left;width:294px;height:330px;overflow:hidden;}
+.exhibition_tab{padding:12px 0 17px;height:27px; line-height:27px;display:none;}
+.exhibition_tab span{ float:left;width:98px; text-align:center; background:#e3e4d6; color:#999; cursor:pointer;}
+.exhibition_tab span.current{background:#999; color:#e3e4d6;}
+.exhibition_wen{ position:relative;margin-top:27px;}
+.exhibition_a{ position:absolute;top:0;left:0;}
+.exhibition_a dl{overflow:hidden;zoom:1;height:151px;}
+.exhibition_a dl dt{ float:left;width:107px;height:107px;overflow:hidden;}
+.exhibition_a dl dd{color:#333; float:left;padding:0 0 0 52px;width:132px;}
+.exhibition_a dl dd p{padding:0 0 3px 0;}
+.exhibition_a dl dd em{ float:left;margin-left:-40px; display:inline; font-style:normal;color:#666;}
+.exhibition_a dl dd a{color:#333;}
+
+/*画家资料*/
+.painter{ float:left;margin-left:28px; display:inline;width:356px;overflow:hidden;}
+.painter_list{margin-left:-4px; float:left;}
+.painter_list li{ float:left;width:86px;height:86px; position:relative;margin:4px 0 0 4px; display:inline;}
+.painter_list li em.alpha{ position:absolute; z-index:3;top:0;left:0;width:86px;height:86px; float:left; background:#000;opacity:0.7;filter:alpha(opacity=70); display:none;}
+.painter_list li span{ position:absolute; z-index:4;top:0;left:0;width:86px;height:86px; float:left; text-align:center;color:#fff; line-height:86px;display:none;}
+.painter_list li a:hover em.alpha,.painter_list li a:hover span{ display:block;}
+h2.h2 .arrow{ position:absolute;right:8px;top:14px;}
+h2.h2 .arrow a{ float:left;width:15px;height:15px;margin:0 0 0 3px; background-color:#9b9b9b;}
+h2.h2 .arrow a.up{ background-image:url(../images/common/arrow1.gif); background-position:center; background-repeat:no-repeat;}
+h2.h2 .arrow a.down{ background-image:url(../images/common/arrow2.gif); background-position:center; background-repeat:no-repeat;}
+h2.h2 .arrow a.wu{ background-color:#d9d9d9;}
+.painter_a{overflow:hidden;margin:11px 0 0; position:relative;height:270px;}
+.painter_a ul{ position:relative;top:0;height:2000px;}
+
+/*公共教育*/
+.public{ float:right;width:296px;padding:0 0 25px;}
+.public_js{border-bottom:1px dashed #666;height:160px;margin:0 0 18px; line-height:18px;}
+.public_js dt,.public_js dt a{ font-size:14px;color:#333; line-height:54px;}
+
+
+/*学术研究*/
+.scholarship{ float:left;width:294px;overflow:hidden;}
+.scholarship_list{margin-left:-15px; float:left;padding:15px 0;overflow:hidden; display:inline;zoom:1;}
+.scholarship_list a{ float:left;margin-left:15px;}
+
+
+/*典藏信息*/
+.collection{ float:left;margin-left:28px; display:inline;width:356px;overflow:hidden;}
+.collection_js{ background:#e3e4d5;margin:15px 0 0;}
+
+
+/*培训动态*/
+.train{ float:right;width:296px;}
+.train_js{padding:15px 0 0;height:127px;}
+.train_img{ float:left;}
+.train_js .news_list{ float:left;margin:-6px 0 0;}
+.train_js .news_list li{ background:none;}
+.contact{ background:#e0e1d8 url(../images/pho/contact.jpg) no-repeat top right;height:105px;padding:10px 0 0 40px; line-height:20px;}
+.contact dt{ line-height:40px;}
+

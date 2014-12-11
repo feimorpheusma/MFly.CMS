@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9BE81EB-E9AF-4D67-AC1A-9D1E4C0668CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dawningsun.CMS.Admin</RootNamespace>
+    <AssemblyName>Dawningsun.CMS.Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\ThirdParty\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON">
+      <HintPath>..\ThirdParty\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>..\ThirdParty\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Article\ArticleAttachment.aspx" />
+    <Content Include="Article\ArticleDetail.aspx" />
+    <Content Include="Article\ArticleList.aspx" />
+    <Content Include="BBS\BBSListAllPage.aspx" />
+    <Content Include="BBS\BBSModuleDetail.aspx" />
+    <Content Include="BBS\BBSModuleEdit.aspx" />
+    <Content Include="CSS\common.css" />
+    <Content Include="CSS\login.css" />
+    <Content Include="CSS\main.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Images\Approve.gif" />
+    <Content Include="Images\bg_input_text.png" />
+    <Content Include="Images\delall.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\chromebg-over.gif" />
+    <Content Include="Images\chromebg.gif" />
+    <Content Include="Images\datePic.png" />
+    <Content Include="Images\adminl.png" />
+    <Content Include="Images\backOrgBar_03.jpg" />
+    <Content Include="Images\barbg.png" />
+    <Content Include="Images\barleftbg.png" />
+    <Content Include="Images\bdsc.png" />
+    <Content Include="Images\bg_input_text_hover.png" />
+    <Content Include="Images\bt1.png" />
+    <Content Include="Images\bt2.png" />
+    <Content Include="Images\closebutton.gif" />
+    <Content Include="Images\computer.png" />
+    <Content Include="Images\del.png" />
+    <Content Include="Images\dialog_closebtn.gif" />
+    <Content Include="Images\dialog_ct.png" />
+    <Content Include="Images\dialog_footercenter.png" />
+    <Content Include="Images\dialog_lb.png" />
+    <Content Include="Images\dialog_lt.png" />
+    <Content Include="Images\dialog_mlm.png" />
+    <Content Include="Images\dialog_mrm.png" />
+    <Content Include="Images\dialog_rb.png" />
+    <Content Include="Images\dialog_rt.png" />
+    <Content Include="Images\dm.png" />
+    <Content Include="Images\dmx.png" />
+    <Content Include="Images\down.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\Error.png" />
+    <Content Include="Images\ex.png" />
+    <Content Include="Images\footbg.png" />
+    <Content Include="Images\gmslj.png" />
+    <Content Include="Images\gmsls.png" />
+    <Content Include="Images\headbg.png" />
+    <Content Include="Images\hidDlgtcleftcomtentbg.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\hoverbg.png" />
+    <Content Include="Images\leftbg.png" />
+    <Content Include="Images\loginbg.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logobg.png" />
+    <Content Include="Images\mbg.png" />
+    <Content Include="Images\mga.png" />
+    <Content Include="Images\mghover.png" />
+    <Content Include="Images\mody.png" />
+    <Content Include="Images\NoImage.jpg" />
+    <Content Include="Images\ordertbg.png" />
+    <Content Include="Images\oz.png" />
+    <Content Include="Images\password.png" />
+    <Content Include="Images\pic1.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\reason.gif" />
+    <Content Include="Images\Refuse.gif" />
+    <Content Include="Images\reset.png" />
+    <Content Include="Images\root.png" />
+    <Content Include="Images\seachbg.png" />
+    <Content Include="Images\set.png" />
+    <Content Include="Images\submit.png" />
+    <Content Include="Images\tab1.png" />
+    <Content Include="Images\tab2.png" />
+    <Content Include="Images\tc.png" />
+    <Content Include="Images\trbg1.png" />
+    <Content Include="Images\tree-ul-li.gif" />
+    <Content Include="Images\up.png" />
+    <Content Include="Images\xzbm.png" />
+    <Content Include="Images\yzm.jpg" />
+    <Content Include="Images\zxp.png" />
+    <Content Include="Images\zzjgbg.png" />
+    <Content Include="Images\zzjglbg.png" />
+    <Content Include="Images\zzjgt.png" />
+    <Content Include="Images\zzjgttbg.png" />
+    <Content Include="Images\adddetail.png" />
+    <Content Include="JS\DD_belatedPNG.js" />
+    <Content Include="JS\jquery-1.7.2.js" />
+    <Content Include="Master\Footer.ascx" />
+    <Content Include="Master\Header.ascx" />
+    <Content Include="Master\LeftMenu.ascx" />
+    <Content Include="Login.aspx" />
+    <Content Include="JS\notification.js" />
+    <Content Include="Menu\MenuDetail.aspx" />
+    <Content Include="Menu\MenuList.aspx" />
+    <Content Include="Modules\UserDetail.ascx" />
+    <Content Include="Modules\HTMLEditor\HTMLEditor.ascx" />
+    <Content Include="Modules\HTMLEditor\Resource\kindeditor-all-min.js" />
+    <Content Include="Modules\HTMLEditor\Resource\kindeditor-all.js" />
+    <Content Include="Modules\HTMLEditor\Resource\kindeditor-min.js" />
+    <Content Include="Modules\HTMLEditor\Resource\kindeditor.js" />
+    <Content Include="Modules\HTMLEditor\Resource\lang\ar.js" />
+    <Content Include="Modules\HTMLEditor\Resource\lang\en.js" />
+    <Content Include="Modules\HTMLEditor\Resource\lang\zh_CN.js" />
+    <Content Include="Modules\HTMLEditor\Resource\lang\zh_TW.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\anchor\anchor.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\autoheight\autoheight.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\baidumap\baidumap.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\baidumap\index.html" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\baidumap\map.html" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\clearhtml\clearhtml.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\code\code.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\code\prettify.css" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\code\prettify.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\emoticons.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\0.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\1.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\10.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\100.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\101.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\102.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\103.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\104.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\105.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\106.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\107.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\108.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\109.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\11.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\110.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\111.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\112.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\113.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\114.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\115.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\116.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\117.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\118.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\119.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\12.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\120.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\121.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\122.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\123.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\124.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\125.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\126.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\127.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\128.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\129.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\13.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\130.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\131.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\132.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\133.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\134.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\14.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\15.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\16.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\17.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\18.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\19.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\2.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\20.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\21.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\22.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\23.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\24.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\25.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\26.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\27.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\28.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\29.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\3.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\30.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\31.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\32.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\33.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\34.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\35.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\36.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\37.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\38.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\39.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\4.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\40.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\41.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\42.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\43.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\44.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\45.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\46.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\47.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\48.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\49.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\5.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\50.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\51.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\52.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\53.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\54.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\55.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\56.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\57.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\58.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\59.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\6.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\60.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\61.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\62.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\63.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\64.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\65.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\66.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\67.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\68.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\69.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\7.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\70.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\71.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\72.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\73.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\74.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\75.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\76.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\77.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\78.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\79.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\8.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\80.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\81.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\82.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\83.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\84.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\85.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\86.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\87.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\88.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\89.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\9.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\90.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\91.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\92.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\93.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\94.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\95.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\96.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\97.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\98.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\99.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\emoticons\images\static.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\filemanager\filemanager.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\filemanager\images\file-16.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\filemanager\images\file-64.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\filemanager\images\go-up.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\flash\flash.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\image\image.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\image\images\align_left.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\image\images\align_right.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\image\images\align_top.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\image\images\refresh.png" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\insertfile\insertfile.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\lineheight\lineheight.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\link\link.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\map\map.html" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\map\map.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\media\media.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\multiimage\images\image.png" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\multiimage\multiimage.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\pagebreak\pagebreak.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\plainpaste\plainpaste.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\preview\preview.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\quickformat\quickformat.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\table\table.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\template\html\1.html" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\template\html\2.html" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\template\html\3.html" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\template\template.js" />
+    <Content Include="Modules\HTMLEditor\Resource\plugins\wordpaste\wordpaste.js" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\common\anchor.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\common\blank.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\common\flash.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\common\loading.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\common\media.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\common\rm.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\default\background.png" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\default\default.css" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\default\default.png" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\qq\editor.gif" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\qq\qq.css" />
+    <Content Include="Modules\HTMLEditor\Resource\themes\simple\simple.css" />
+    <Content Include="Modules\PassWordEdit.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\CommonHelper.cs" />
+    <Compile Include="App_Code\ControlHelper.cs" />
+    <Compile Include="App_Code\FormatHelper.cs" />
+    <Compile Include="App_Code\PageHelper.cs" />
+    <Compile Include="App_Code\TreeViewHelper.cs" />
+    <Compile Include="Article\ArticleAttachment.aspx.cs">
+      <DependentUpon>ArticleAttachment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article\ArticleAttachment.aspx.designer.cs">
+      <DependentUpon>ArticleAttachment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Article\ArticleDetail.aspx.cs">
+      <DependentUpon>ArticleDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article\ArticleDetail.aspx.designer.cs">
+      <DependentUpon>ArticleDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Article\ArticleList.aspx.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article\ArticleList.aspx.designer.cs">
+      <DependentUpon>ArticleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBS\BBSListAllPage.aspx.cs">
+      <DependentUpon>BBSListAllPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBS\BBSListAllPage.aspx.designer.cs">
+      <DependentUpon>BBSListAllPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBS\BBSModuleDetail.aspx.cs">
+      <DependentUpon>BBSModuleDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBS\BBSModuleDetail.aspx.designer.cs">
+      <DependentUpon>BBSModuleDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BBS\BBSModuleEdit.aspx.cs">
+      <DependentUpon>BBSModuleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BBS\BBSModuleEdit.aspx.designer.cs">
+      <DependentUpon>BBSModuleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuDetail.aspx.cs">
+      <DependentUpon>MenuDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuDetail.aspx.designer.cs">
+      <DependentUpon>MenuDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuList.aspx.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuList.aspx.designer.cs">
+      <DependentUpon>MenuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UserDetail.ascx.cs">
+      <DependentUpon>UserDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UserDetail.ascx.designer.cs">
+      <DependentUpon>UserDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HTMLEditor\HTMLEditor.ascx.cs">
+      <DependentUpon>HTMLEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\HTMLEditor\HTMLEditor.ascx.designer.cs">
+      <DependentUpon>HTMLEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PassWordEdit.ascx.cs">
+      <DependentUpon>PassWordEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\PassWordEdit.ascx.designer.cs">
+      <DependentUpon>PassWordEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\User\UserDetail.aspx.cs">
+      <DependentUpon>UserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\User\UserDetail.aspx.designer.cs">
+      <DependentUpon>UserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\User\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\User\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="FileUpload\Image\" />
+    <Folder Include="Modules\HTMLEditor\Attachment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SystemManage\User\UserDetail.aspx" />
+    <Content Include="SystemManage\User\UserList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mfly.CMS.MiddleTier.Model\Mfly.CMS.MiddleTier.Model.csproj">
+      <Project>{DD492D04-150D-4E93-B642-2EC6A315C372}</Project>
+      <Name>Mfly.CMS.MiddleTier.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mfly.CMS.MiddleTier.Service\Mfly.CMS.MiddleTier.Service.csproj">
+      <Project>{80ACD73E-4A0C-48F1-829C-1FB97DD5FEBC}</Project>
+      <Name>Mfly.CMS.MiddleTier.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mfly.CMS.Utility\Mfly.CMS.Utility.csproj">
+      <Project>{70804AAA-BB69-4BD8-9423-BAC2421220B9}</Project>
+      <Name>Mfly.CMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modules\HTMLEditor\GenericHandler\file_manager_json.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modules\HTMLEditor\GenericHandler\upload_json.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54225</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

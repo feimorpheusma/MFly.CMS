@@ -1,0 +1,90 @@
+@charset "gb2312";
+/* CSS Document */
+/* = = = = = = = = Auction MainContent Style = = = = = =  = = */ 
+#sub_pmh_list_c{float:left;width:631px;*width:633px;height:auto;margin-bottom:15px;border-bottom:1px Solid #eee;}
+/* ================== ..............  Auction 宸︿晶 鍖哄煙 .................. ============ */
+#sub_left_list{float:left;width:631px;*width:633px;height:auto;background:#f0f0f0;margin-bottom:15px;border:1px Solid #eaeaea;}
+/* 浜岀骇 宸︿晶鍐呭鍒楄〃 */
+#sub_pmh_list_c_name{float:left;width:631px;*width:633px;height:30px;line-height:30px;border-bottom:1px Solid #eee;}
+#sub_h_list_left{float:left;width:88px;height:60px;border:1px Solid #eee; margin:13px 0 0 13px; padding-bottom:13px;}
+#sub_h_list_time_c{float:left;width:70px;height:65px;border:1px Solid #dadada;font-family:Arial,Helvetica,sans-serif;text-align:center;letter-spacing:0.1em;} /* 鏃堕棿 / 鏃ュ巻鏄剧ず妯″紡 */
+#sub_h_list_time_c_top{float:left;width:70px;height:25px;line-height:25px;font-size:12px;color:#222;background:url(../images/sub_time_c_t_bg.gif) repeat-x;}
+#sub_h_list_time_c_bottom{float:left;width:70px;height:40px;line-height:40px;font-size:14px;color:#c6010a;text-align:center;background:url(../images/sub_time_c_b_bg.gif) repeat-x;}
+/**/
+#sub_h_list_right{float:left;width:515px;height:auto;margin:13px 0 13px 0;}
+#sub_h_list_r_info{float:left;width:268px;height:auto;}
+#sub_h_list_r_price{float:left;width:190px;height:auto;letter-spacing:0.1em;}
+#sub_h_list_r_price_g{float:left;width:185px;height:23px;margin-top:60px;font-size:12px;font-weight:100;color:#6d696a;}
+#sub_h_list_r_price_c{float:left;width:185px;height:23px;font-size:12px;font-weight:600;color:#6d696a;margin-top:10px; text-align:right;}
+#sub_h_list_r_price_c a{text-decoration:none;color:#6d696a;padding:5px 5px 5px 5px;border:1px Solid #eae6e0;}
+
+#sub_l_list_left{float:left;width:167px;height:142px;border:1px Solid #eee; margin:13px 0 0 13px; padding-bottom:13px;}
+#sub_l_list_left_img{float:left;width:142px;height:142px;border:1px Solid #eee;*padding-bottom:3px;}
+/**/
+#sub_l_list_right{float:left;width:448px;height:auto;margin:13px 0 13px 0;}
+#sub_l_list_r_info{float:left;width:268px;height:auto;}
+#sub_l_list_r_info_title{float:left;width:268px;height:25px;color:#999;}
+#sub_l_list_r_info_titleII{float:left;width:248px;height:auto;line-height:160%;margin-top:-5px;padding-bottom:5px;color:#999;}
+#sub_l_list_r_info_subinfo{float:left;width:268px;height:auto!important;}
+#sub_l_list_r_info_contentinfo{float:left;width:345px;height:auto;line-height:180%;}
+/**/
+#sub_l_list_r_price{float:left;width:180px;height:auto;}
+#sub_l_list_r_price_g{float:left;width:175px;height:23px;margin-top:60px;font-size:12px;font-weight:100;color:#6d696a;}
+#sub_l_list_r_price_c{float:left;width:175px;height:23px;font-size:12px;font-weight:600;color:#6d696a;}
+/**/
+
+#sub_l_list_pic_L{float:left;width:162px;height:230px; margin:7px 0 0 0;}
+#sub_l_list_pic_R{float:left;width:142px;height:230px; margin:7px 0 0 0;}
+#sub_l_list_pic_img{float:left;width:144px;height:144px;border:1px Solid #d7d1d3;}
+#sub_l_list_pic_info{float:left;width:142px;height:69px;}
+#sub_l_list_pic_lot{float:left;width:140px;height:26px;line-height:26px;}
+#sub_l_list_pic_title{float:left;width:140px;height:35px;line-height:150%;}
+.sub_pic_bottomline{border-bottom:1px Solid #ccc;}
+/**/
+
+#sub_l_content{float:left;width:631px;*width:633px;height:auto;margin-bottom:15px;}
+#sub_l_c_top{float:left;width:631px;*width:633px;height:50px;line-height:50px;}
+#sub_l_c_bottom{float:left;width:631px;*width:633px;height:auto;}
+#sub_l_c_imgArea{float:left;width:631px;*width:633px;height:auto;}
+#sub_l_c_img{float:left;width:628px;*width:630px;height:auto; text-align:center; padding:10px 0 10px 0;border:1px Solid #ccc9c4;background:#dbdbdb;}
+#sub_l_c_imgToll{float:left;width:605px;*width:630px;height:26px;*height:33px;padding:8px 20px 0 5px;text-align:right; border-bottom:1px Solid #cbc9ca;color:#ccc;}
+
+#sub_l_c_imgInfo{float:left;width:628px;*width:630px;height:auto;}
+#sub_l_c_imgInfo_t{float:left;width:628px;*width:630px;height:70px;border-bottom:1px Solid #ccc9c4;}
+#sub_l_c_imgInfo_b{float:left;width:628px;*width:630px;height:auto;padding-bottom:10px;border-bottom:1px Solid #ccc9c4;}
+#sub_l_c_imgInfo_t_left{float:left;width:268px;height:auto;line-height:190%; margin-top:10px;} 
+#sub_l_c_imgInfo_t_right{float:left;width:350px;height:auto;color:#6d696a;line-height:190%; margin-top:10px;} 
+#sub_l_c_posinfo{float:left;width:600px;line-height:30px;}
+
+
+.a_pmh_name,.a_pmh_name a {text-decoration:none;color:#c7000e;font-size:14px;font-weight:600;}
+/**/
+.a_pmht,.a_pmht a {text-decoration:none;color:#666;font-size:12px;} 
+.a_pmhlist_title,.a_pmhlist_title a {text-decoration:none;color:#666;font-size:13px;font-weight:600;}
+.a_pmhlist_title a:hover {text-decoration:none;color:#333;}
+.a_pmh_price_c {text-decoration:none;color:#c6010b;font-size:12px;font-weight:600;font-family:Arial,Helvetica,sans-serif;background:url(../images/RMB_icon.gif) no-repeat; padding-left:11px;}
+
+.a_pmh_title{color:#767064; margin-left:5px;}
+.a_pmh_title a{padding:0px 15px; display:inline-block; height:26px; color:#767064; font-size:12px; line-height:25px; text-decoration:none; font-weight:bold; border-right:#bcbcbc 1px solid;}
+.a_pmh_title a:hover{height:25px; border-bottom:#c9000a 1px solid; color:#c50007;}
+.a_pmh_time{color:#767064;}
+.a_pmh_time a{display:inline-block; padding:0px 13px; margin-left:-6px;}
+.a_pmh_time a:hover{background:#eeeeee; }
+
+.a_l_lot,.a_l_lot a {text-decoration:none;color:#666;font-size:10px;-webkit-text-size-adjust:none;font-family:Arial,Helvetica,sans-serif;}
+.a_l_lotnum,.a_l_lotnum a {text-decoration:none;color:#c7000a;font-size:12px;font-family:Arial,Helvetica,sans-serif;}
+.a_lot_title,.a_lot_title a {text-decoration:none; color:#666;font-size:13px;font-weight:600;}
+.a_lot_titleII,.a_lot_titleII a {text-decoration:none; color:#777;font-size:12px;font-weight:600; letter-spacing:0em;}
+.a_lot_listinfo,.a_lot_listinfo a {text-decoration:none; color:#888;font-size:12px;}
+/**/
+
+.a_lot_price_g {text-decoration:none;color:#c6010b;font-size:10px;-webkit-text-size-adjust:none;font-family:Arial,Helvetica,sans-serif;background:url(../images/RMB_icon.gif) no-repeat;padding-left:11px;}
+.a_lot_price_c {text-decoration:none;color:#c6010b;font-size:12px;font-weight:600;font-family:Arial,Helvetica,sans-serif;background:url(../images/RMB_icon.gif) no-repeat;padding-left:11px;}
+
+.a_lot_Ctitle,.a_lot_Ctitle a {text-decoration:none; color:#3c3837;font-size:14px;font-weight:600;padding-left:15px;}
+
+.a_c_lot,.a_c_lot a {text-decoration:none;color:#666;font-size:12;font-family:Arial,Helvetica,sans-serif;}
+.a_c_lotnum,.a_c_lotnum a {text-decoration:none;color:#666;font-size:14px;font-family:Arial,Helvetica,sans-serif;}
+.a_c_lot_title,.a_c_lot_title a {text-decoration:none; color:#666;font-size:14px;font-weight:600;}
+
+

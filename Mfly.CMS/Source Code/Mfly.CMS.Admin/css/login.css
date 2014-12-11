@@ -1,0 +1,88 @@
+body
+{
+    background: #106198;
+}
+#bg
+{
+    width: 712px;
+    height: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/loginbg.png) no-repeat;
+}
+#login
+{
+    width: 350px;
+    height: 340px;
+    float: right;
+    margin-top: 370px;
+}
+#login
+{
+    vertical-align: middle;
+}
+#login p
+{
+    line-height: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+#login p span
+{
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+}
+#login p span img
+{
+    width: 60px;
+    height: 24px;
+    vertical-align: middle;
+}
+#login label
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #106198;
+    vertical-align: middle;
+}
+#login input
+{
+    height: 20px;
+    border: 1px solid #80abc8;
+}
+#login .checkBox
+{
+    height: 20px;
+    border: 0px solid #80abc8;
+}
+#login .submit
+{
+    width: 75px;
+    height: 30px;
+    background: url(../images/submit.png) left top no-repeat;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#login .reset
+{
+    width: 75px;
+    height: 30px;
+    background: url(../images/reset.png) left top no-repeat;
+    border: none;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#login table td 
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

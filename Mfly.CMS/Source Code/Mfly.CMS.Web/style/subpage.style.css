@@ -1,0 +1,97 @@
+/* = = = = = = = = Home MainContent Style = = = = = = 内页 页面 样式定义 = = */ 
+/* ================== .............. 二级页面 左侧 区域 .................. ============ */
+#sub_left{float:left;width:664px;height:auto; text-align:left; border-left:1px Solid #f0efea;background:url(../images/subpageContentBG.gif) repeat;}
+/* ... 左侧 上部 .. */
+#sub_left_top{float:left;width:634px;height:90px;; text-align:left;margin-left:14px;}/* ... 左侧 上部 .. */
+#sub_left_top_t{float:left;width:634px;height:61px;}
+#sub_left_top_b{float:left;width:632px;*width:634px;height:auto;border:1px Solid #c4c4c6;border-top:1px Solid #ccb6b8;border-left:1px Solid #d2d2d2;border-right:1px Solid #ddd;}/* ....... 页面头 导航菜单 区域 ....... */
+#sub_left_top_b_px{float:left;width:auto;height:auto;line-height:13px;font-family:"宋体",Microsoft Yahei; font-size: 12px;}/* ....... 排序 ....... */
+#sub_left_top_b_ss{float:left;width:auto;height:26px;}
+#sub_search{float:left;width:190px;height:20px;margin:2px 0 0 3px;}/* ....... 搜索 ....... */
+#sub_search_text{float:left;width:125px;height:20px;}
+#subinput{float:left;width:123px;height:18px;*height:20px;padding-left:5px;*padding-top:2px;font-size:12px;font-family:"宋体";Color:#666;border:1px Solid #ced0cd;background:#ebebe1;outline:none;}
+#sub_search_btn{float:left;width:40px;height:20px;}
+#subbtn{float:left;width:40;height:22px;*height:20px;line-height:16px;border:1px Solid #ced0cd;background:#d6d3cc;color:#878785; text-align:center;font-size:12px;}
+#sub_listway{float:left;width:60px;*width:90px;height:22px;margin-top:2px; text-align:right;border-left:1px Solid #bcbcbc;}/* ....... 排序 ....... */
+#sub_listway_l{float:right;width:25px;height:22px; text-align:right;}
+#sub_listway_r{float:right;width:25px;height:22px; text-align:left;}
+/**/
+/* ... 左侧 下部 .. */
+#sub_left_bottom{float:left;width:635px;height:auto;; text-align:left;margin-left:14px; margin-top:30px;} /* ... 左侧 下部 .. */
+
+#sub_left_position{float:left;width:633px;*width:634px;height:23px;border-bottom:1px Solid #8e999f;}/* ....... 页面头 当前位置 区域 ....... */
+#sub_left_pos_l{float:left;width:480px;height:23px;color:#333;}
+#sub_left_pos_r{float:left;width:150px;height:23px;color:#b3b2b0;text-align:right;}
+/**/
+#sub_left_infoArea{float:left;width:633px;*width:634px;height:auto; margin-top:6px;}/* ....... 页面左侧 内容 区域 ....... */
+
+/* ================== .............. 二级页面 右侧 区域 .................. ============ */
+#sub_right{float:right;width:280px;height:auto; text-align:right;background:#e3e4e6;margin-bottom:10px;}
+
+#r_top_calendarArea{float:right;width:280px;height:auto; text-align:left; border-left:1px Solid #b0aeaf;border-right:1px Solid #b0aeaf;border-bottom:3px Solid #b7b7b7;background:#e5e5e5;}
+/* .............. 日历 定义集合 ........... */
+#R_top_bgk{float:left;width:280px; background:url(../images/RightTopBG.gif) no-repeat !important;}
+#calendar_bgk{float:left;width:280px;height:auto; background:url(../images/calendarTopBG.gif) no-repeat !important;padding-bottom:15px;}
+#calendar_bgk_top{float:left;width:280px;height:29px;}
+#calendar_bgk_bottom{float:left;width:280px;height:auto;}
+.events_calendar_title {font-size:12px;font-family:Arial,Helvetica,sans-serif;color:#fff; letter-spacing:0.1em; }
+.calendar_touch,table A { text-decoration: none; color: #fff; }
+.calendar_touch,table A:hover { text-decoration: none; color: #fff; }
+.arrow { font-family: webdings; }
+.calendar { color: #cd201c; text-align: center; font: 11px Verdana; height:20px;}
+.calendar A { color: #fff; background:#c7000e;padding:0 2px 0 2px; }
+.calendar A:hover { color: #fff;background:#666;padding:0 2px 0 2px; }
+.calendar-week { color: #757270; text-align: center; font: bold 11px Tahoma;*height:25px; }
+.calendar-today { color: #fff; text-align: center; font:bold 11px Verdana; background:#8e9ba2;}
+.calendar-today A { color: #F6931C;text-decoration: none; font:bold 11px Verdana;}
+.calendar-thisday { color: #939393; text-align: center; font: 11px Verdana; }
+.calendar-thisday A { color: #fff;text-decoration:none;background:#c7000e;padding:0 2px 0 2px; }
+/* .............. 拍品目录 定义集合 ........... */
+#r_ppml_area{float:right;width:278px;border:1px Solid #e9ebe8;margin-top:3px; text-align:left;}
+#r_ppml_title{float:left;width:278px;height:35px;border-bottom:1px dotted #fff; background:#babebf;}
+#r_ppml_title_en{float:left;width:190px;height:35px;line-height:39px;*line-height:35px;}
+/*#r_ppml_sub_title{float:left;width:266px;*width:278px;height:23px;*height:33px;padding:8px 0 0 12px;border-bottom:1px dotted #fff; background:#cbcfd2;}*/
+#r_ppml_sub_title{height:32px; line-height:31px; background:#cbcfd2 url(../images/yzLine.png) repeat-x left top;}
+
+
+
+#r_ppml_titleII{height:28px; padding-left:11px; line-height:23px; color:#ffffff; text-align:left; font-size:14px;}
+#r_ppml_titleII a{color:#ffffff; font-size:14px;}
+/*#r_ppml_sub_titleII{width:266px;*width:278px;height:23px;*height:33px;padding:8px 0 0 12px;border-bottom:1px dotted #fff; background:#dadee1;}*/
+
+/* 分页 */
+#page_c{float:left;width:633px;*width:631px;margin-bottom:2px;padding-top:10px;background:#eee;}
+#Sub_List_page_C{float:left;width:620px;margin-bottom:2px;Color:#666666;text-align:left;font:11px Tahoma,"Trebuchet MS";padding:0 0 5px 10px;}
+#page_control_button { font-size: 10px; border: 1px solid #CDCDCD; }
+.mainnews_page a { color:#fff; padding:2px 5px 4px 5px;*padding:2px 5px 2px 5px; letter-spacing: 0em; text-decoration:none; background:#aaa; }
+.mainnews_page a:hover{ Color:#fff; text-decoration:none; background:#c7000e; }
+
+/* .............. class 定义集合 ........... */
+.sub_topMenu{color:#767064;padding:6px 15px 8px 11px;}
+.sub_topMenu a{text-decoration:none;color:#767064;font-family:Arial,Helvetica,sans-serif;font-size:10px;-webkit-text-size-adjust:none;*font-size:9px;font-weight:600;padding:6px 15px 8px 11px;border-right:1px Solid #bcbcbc;}
+.sub_topMenu a:hover{text-decoration:none;border-bottom:1px Solid #c9000a; *background:#eee;}
+
+.sub_left_pos,.sub_left_pos a{text-decoration:none;color:#666;font-size:12px;}
+.sub_left_pos a:hover{text-decoration:none;color:#c70009;}
+
+/* 右侧 二级菜单 */
+.sub_r_title_ch a{text-decoration:none;color:#5c5452;font-size:12px;font-weight:600;letter-spacing:0.1em;}
+.sub_r_title_en a{text-decoration:none;color:#8c8784;font-size:10px;-webkit-text-size-adjust:none;font-weight:100;font-family:Arial, Helvetica, sans-serif;}
+.sub_r_titleII_ch a{text-decoration:none;color:#6c6462;font-size:12px;font-weight:600;letter-spacing:0.1em;}
+.sub_r_titleII_en a{text-decoration:none;color:#9c9794;font-size:10px;-webkit-text-size-adjust:none;font-weight:100;font-family:Arial, Helvetica, sans-serif;}
+
+.sub_r_sub_title{padding-left:11px;}
+.sub_r_sub_title a{padding-left:15px; text-decoration:none; color:#636162; background:url(../images/sub_right_reddot.gif) no-repeat left 6px;}
+
+.pp_num{color:#fff;font-size:10px;-webkit-text-size-adjust:none;letter-spacing:0.1em;margin-left:5px;}
+
+/*右侧拍卖*/
+.catalogue{margin:2px 0px 0px; line-height:36px; padding-left:11px; color:#5C5452; font:bold 14px/36px "microsoft yahei"; text-align:left; background:#babebf url(../images/yzLine.png) repeat-x left top;}
+.catalogue i{padding-left:10px; color:#8c8784; font-style:normal; font:10px/36px Arial;}
+.subR-tit{margin:0px; padding-left:11px; color:#5c5452; cursor:pointer; font:bold 12px/36px "microsoft yahei"; text-align:left; background:#c3c7c8 url(../images/yzLine.png) repeat-x left top;}
+.auction-list{padding:0px; list-style:none; margin:0px;}
+.auction-list li{text-align:left; height:36px; padding-left:11px; line-height:35px; background:#cbcfd2 url(../images/yzLine.png) repeat-x left top;}
+.auction-list li a{color:#636162; text-decoration:none}
+
+
+

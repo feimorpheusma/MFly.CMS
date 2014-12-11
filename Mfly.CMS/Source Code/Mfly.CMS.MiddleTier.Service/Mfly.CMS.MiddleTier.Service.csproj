@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80ACD73E-4A0C-48F1-829C-1FB97DD5FEBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dawningsun.CMS.MiddleTier.Service</RootNamespace>
+    <AssemblyName>Dawningsun.CMS.MiddleTier.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArticleDAL.cs" />
+    <Compile Include="ArticleManager.cs" />
+    <Compile Include="Article_AttachmentDAL.cs" />
+    <Compile Include="Article_AttachmentManager.cs" />
+    <Compile Include="AttachmentDAL.cs" />
+    <Compile Include="AttachmentManager.cs" />
+    <Compile Include="CustomizedException\EntityAlreadyProcessed.cs" />
+    <Compile Include="CustomizedException\EntityQuantityNotEnoughException.cs" />
+    <Compile Include="CustomizedException\EntityRepeatedException.cs" />
+    <Compile Include="CustomizedException\EntityInUseException.cs" />
+    <Compile Include="CustomizedException\EntityNotFoundException.cs" />
+    <Compile Include="MenuDAL.cs" />
+    <Compile Include="MenuManager.cs" />
+    <Compile Include="PostDAL.cs" />
+    <Compile Include="PostManager.cs" />
+    <Compile Include="PostModuleDAL.cs" />
+    <Compile Include="PostModuleManager.cs" />
+    <Compile Include="PostReplyDAL.cs" />
+    <Compile Include="PostReplyManager.cs" />
+    <Compile Include="Post_AttachmentDAL.cs" />
+    <Compile Include="Post_AttachmentManager.cs" />
+    <Compile Include="TeacherDAL.cs" />
+    <Compile Include="TeacherManager.cs" />
+    <Compile Include="UserDAL.cs" />
+    <Compile Include="UserManager.cs" />
+    <Compile Include="UserSessionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mfly.CMS.MiddleTier.Model\Mfly.CMS.MiddleTier.Model.csproj">
+      <Project>{DD492D04-150D-4E93-B642-2EC6A315C372}</Project>
+      <Name>Mfly.CMS.MiddleTier.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mfly.CMS.Utility\Mfly.CMS.Utility.csproj">
+      <Project>{70804AAA-BB69-4BD8-9423-BAC2421220B9}</Project>
+      <Name>Mfly.CMS.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

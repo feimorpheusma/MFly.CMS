@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Mfly.CMS.Admin.Master.Main" %>
+
+<%@ Register Src="LeftMenu.ascx" TagName="LeftMenu" TagPrefix="uc" %>
+<%@ Register Src="Header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register Src="Footer.ascx" TagName="Footer" TagPrefix="uc" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>网站后台管理系统</title>
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+        <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm" runat="server" EnablePageMethods="true" EnableScriptGlobalization="true"
+            EnableScriptLocalization="true" EnablePartialRendering="true">
+            <Scripts>
+                <asp:ScriptReference Path="~/JS/jquery-1.7.2.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <!--head结束 -->
+        <div id="head">
+            <uc:Header ID="Header" runat="server" />
+        </div>
+        <!--head结束 -->
+        <table width="100%" style="min-height: 100%;">
+            <tr>
+                <td valign="top">
+                    <div class="menu">
+                      <uc:LeftMenu ID="ucLeftMenu" runat="server" />
+                    </div>
+                </td>
+                <td style="width: 100%; background: #f1f1f1;" valign="top">
+                    <div id="main_right">
+                        <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+                <!--右侧结束 -->
+            </tr>
+        </table>
+        <div class="push">
+        </div>
+        </form>
+    </div>
+    <div id="foot" >
+        <uc:Footer ID="ucFoot" runat="server" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<ConnectionStrings>
+  <ConnectionString Index="1" ServerName="LISAZHANG\SQL2008" DBName="CMS" UserID="sa" Password="123456789" />
+  <ConnectionString Index="2" ServerName="SERVER50-PC\SQLSERVER2008" DBName="PSM" UserID="sa" Password="black123" />
+  <ConnectionString Index="3" ServerName="192.168.0.50\SQLSERVER2008" DBName="PSM" UserID="sa" Password="black123" />
+  <ConnectionString Index="4" ServerName="LISAZHANG\SQL2008" DBName="donggo" UserID="sa" Password="123456789" />
+  <ConnectionString Index="5" ServerName="LISA" DBName="ChangXUDB2" UserID="sa" Password="black123" />
+  <ConnectionString Index="6" ServerName="192.168.0.50\SQLSERVER2008" DBName="ChangxuDB" UserID="sa" Password="black123" />
+  <ConnectionString Index="7" ServerName="SERVER50-PC\SQLSERVER2008" DBName="ChangxuDB" UserID="sa" Password="black123" />
+  <ConnectionString Index="8" ServerName="192.168.0.50\SQLSERVER2008" DBName="ChangxuEmptyDB" UserID="sa" Password="black123" />
+  <ConnectionString Index="9" ServerName="LISA" DBName="ChangxuDB" UserID="sa" Password="black123" />
+  <ConnectionString Index="10" ServerName="localhost" DBName="CMS" UserID="sa" Password="black123" />
+</ConnectionStrings>
